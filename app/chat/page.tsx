@@ -54,7 +54,7 @@ export default function ChatPage() {
     );
 
     return () => unsub();
-  });
+  }, [activeProject?.id]);
 
   const retrieveFiles = async () => {
     console.log("FINDING FILES")
